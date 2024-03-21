@@ -1,0 +1,23 @@
+<main>
+  <h1>Usuários Cadastrados</h1>
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Nickname</th>
+    </tr>
+    {{#if usuarios}}
+      {{#each usuarios}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.nome}}</td>
+          <td>{{this.nickname}}</td>
+        </tr>
+      {{/each}}
+    {{else}}
+      <tr>
+        <td colspan="3">Não há usuários</td>
+      </tr>
+    {{/if}}
+  </table>
+</main>
