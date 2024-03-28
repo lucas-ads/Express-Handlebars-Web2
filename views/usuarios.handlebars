@@ -11,7 +11,9 @@
         <tr>
           <td>{{this.id}}</td>
           <td>{{this.nome}}</td>
-          <td>{{this.nickname}}</td>
+          <td>
+            <a href="/usuarios/{{this.id}}">{{this.nickname}}</a>
+          </td>
         </tr>
       {{/each}}
     {{else}}
