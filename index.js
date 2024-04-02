@@ -7,6 +7,8 @@ app.use(
   })
 );
 
+app.use(express.static("public"));
+
 app.use(express.json());
 
 const exphbs = require("express-handlebars");
